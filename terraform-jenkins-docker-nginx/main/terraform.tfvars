@@ -23,7 +23,7 @@ provide_ami = {
 cidr_blocks = ["0.0.0.0/0"]
 name = "Jenkins"
 
-kms_key_id = "arn:aws:kms:us-east-2:027330342406:key/d387bfc3-9214-4414-b2eb-8786965c2619"   ### Provide the ARN of KMS Key.
+kms_key_id = "arn:aws:kms:us-east-2:02XXXXXXXXX6:key/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"   ### Provide the ARN of KMS Key.
 
 ################################Parameters to create ALB############################
 
@@ -47,5 +47,5 @@ timeout = 3
 interval = 30
 healthcheck_path = "/login"
 ssl_policy = ["ELBSecurityPolicy-2016-08", "ELBSecurityPolicy-TLS-1-2-2017-01", "ELBSecurityPolicy-TLS-1-1-2017-01", "ELBSecurityPolicy-TLS-1-2-Ext-2018-06", "ELBSecurityPolicy-FS-2018-06", "ELBSecurityPolicy-2015-05"]
-certificate_arn = "arn:aws:acm:us-east-2:027330342406:certificate/e917b8e1-0336-45b1-a237-0235e2986ad7"
+certificate_arn = "arn:aws:acm:us-east-2:02XXXXXXXXX6:certificate/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 type = ["forward", "redirect", "fixed-response"]
