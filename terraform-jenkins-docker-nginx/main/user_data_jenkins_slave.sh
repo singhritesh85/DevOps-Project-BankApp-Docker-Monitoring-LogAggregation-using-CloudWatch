@@ -17,9 +17,9 @@ systemctl reload sshd;
 yum install java-17* git -y
 yum install -y docker && systemctl start docker && systemctl enable docker
 chown jenkins:jenkins /var/run/docker.sock
-cd /opt/ && wget https://dlcdn.apache.org/maven/maven-3/3.9.7/binaries/apache-maven-3.9.7-bin.tar.gz
-tar -xvf apache-maven-3.9.7-bin.tar.gz
-mv /opt/apache-maven-3.9.7 /opt/apache-maven
+cd /opt/ && wget https://dlcdn.apache.org/maven/maven-3/3.9.10/binaries/apache-maven-3.9.10-bin.tar.gz
+tar -xvf apache-maven-3.9.10-bin.tar.gz
+mv /opt/apache-maven-3.9.10 /opt/apache-maven
 cd /opt && wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.8.0.2856-linux.zip
 unzip sonar-scanner-cli-4.8.0.2856-linux.zip
 rm -f sonar-scanner-cli-4.8.0.2856-linux.zip
